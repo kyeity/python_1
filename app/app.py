@@ -15,7 +15,7 @@ def bigger(a, b):
         return b
 #a = float(input("Введите первое число: "))
 #b = float(input("Введите второе число: "))
-#print(bigger(a, b))
+#print(bigger(9, 8))
 
 '''
 Високосний рік
@@ -58,6 +58,8 @@ def ice_cream(a):
 '''Cycle
 
 Функція приймає 2 числа, має вивести всі парні числа між ними'''
+def even_numbers(a, b):
+
 
 num1 = int(input("Введіть першу цифру: "))
 num2 = int(input("Введіть другу цифру: "))
