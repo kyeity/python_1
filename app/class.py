@@ -126,16 +126,32 @@ class Car(Driver, Engine):
         return f'{self.brand}, {self.class_of_auto},'
 
 class Lorry(Car):
-    pass
+    def __init__(self, weight=3500):
+        self.weight = weight
 
-class sportcar(Car):
-    pass
+    def __str__(self):
+        if self.weight >= 3500:
+            return f'Вантажівка'
+        else:
+            return f'Легковик'
+
+class Sportcar(Car):
+    def __init__(self, max_speed=250):
+        self.max_speed = max_speed
+
+    def __str__(self):
+        if self.max_speed >= 250:
+            return f'Спорткар'
+        else:
+            return f'Слоукар'
 
 a = Car()
 b = a.turnLeft()
 d = Driver()
 e = Engine()
-print(d, e, a, b)
+f = Lorry(350)
+g = Sportcar(300)
+print(d, e, a, b, f, g)
 
 
 
