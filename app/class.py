@@ -155,8 +155,6 @@ print(d, e, a, b, f, g)
 
 
 
-
-
 '''class Cat:
 
     def __init__(self, name, breed='haski', age=3, color='ruby'):
